@@ -1,5 +1,10 @@
 @use '_variables.scss';
 
+@mixin center-divs {
+    width: 75%;
+    margin: 0 auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -55,4 +60,8 @@
     flex: 1.5;
     background-color: #EFEFEF;
     border: 1px solid green;
+}
+
+.content {
+    @include center-divs;
 }

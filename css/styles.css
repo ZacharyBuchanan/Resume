@@ -53,4 +53,9 @@
   border: 1px solid green;
 }
 
+.content {
+  width: 75%;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=styles.css.map */
