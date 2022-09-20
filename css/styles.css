@@ -19,11 +19,11 @@
   padding: 20px 0;
 }
 
-.title h1 {
+.title h1, .contact-info h1 {
   font-size: 60px;
   font-weight: 900;
 }
-.title h3 {
+.title h3, .contact-info h3 {
   font-size: 25px;
   font-weight: 100;
 }
@@ -31,26 +31,43 @@
 .main-container {
   height: 100%;
   display: flex;
-  border: 2px solid black;
 }
 .main-container h2 {
   color: #78807F;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.main-container h6 {
+  margin-bottom: 5px;
 }
 .main-container hr {
-  width: 10%;
+  width: 15%;
   margin-right: auto;
+  margin-bottom: 10px;
   border: 2px solid #78807F;
+}
+.main-container li, .main-container h4 {
+  margin-bottom: 5px;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .contact-box {
   flex: 1;
-  border: 1px solid red;
+}
+
+.contact-info {
+  margin: 20px 0;
 }
 
 .experience-box {
   flex: 1.5;
   background-color: #EFEFEF;
-  border: 1px solid green;
 }
 
 .content {

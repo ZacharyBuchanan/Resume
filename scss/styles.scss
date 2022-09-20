@@ -40,26 +40,44 @@
 .main-container {
     height: 100%;
     display: flex;
-    border: 2px solid black;
     h2 {
         color: variables.$primary-color;
+        letter-spacing: 3px;
+        margin-bottom: variables.$content-spacing;
+    }
+    h6 {
+        margin-bottom: variables.$list-spacing;
     }
     hr {
-        width: 10%;
+        width: 15%;
         margin-right: auto;
+        margin-bottom: variables.$content-spacing;
         border: 2px solid variables.$primary-color;
     }
+    li, h4 {
+        margin-bottom: variables.$list-spacing;
+    }
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .contact-box {
     flex: 1;
-    border: 1px solid red;
+}
+
+.contact-info {
+    margin: 20px 0;
+    @extend .title;
 }
 
 .experience-box {
     flex: 1.5;
     background-color: #EFEFEF;
-    border: 1px solid green;
 }
 
 .content {
